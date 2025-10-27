@@ -27,23 +27,21 @@ print(' ')
 
 
 #question 2
-
-
 pop_initial = float(input('entrez la population initiale de bactérie: '))
 population = pop_initial * (np.pi / 1.5)
-print(population * 100)
+print(population, 'population a chaque heure')
 
 
-#plt.figure(figsize=(5,5))
-#plt.title('croissance bactérienne')
-#plt.plot([0, 10], [population], '.b*')
-#plt.plot([0, 10], [50000], '.r--')
-#plt.xlim([0, 10])
-#plt.ylim([0, 165000])
-#plt.xlabel('heures')
-#plt.ylabel('population')
-#plt.axis('equal')
-#plt.grid()
-#plt.show()
+plt.figure(figsize=(5,5))
+plt.title('croissance bactérienne')
+plt.plot([0, 10], [population], '.b*')
+plt.plot([0, 10], [50000], '.r--')
+plt.xlim([0, 10])
+plt.ylim([0, 165000])
+plt.xlabel('heures')
+plt.ylabel('population')
+plt.axis('equal')
+plt.grid()
+plt.show()
 
 
